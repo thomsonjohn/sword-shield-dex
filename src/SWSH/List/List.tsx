@@ -1,6 +1,8 @@
 import React from "react";
 import { RouteComponentProps } from "@reach/router";
 
+import ListItem from "../ListItem";
+
 import swshList from "../../data/swsh";
 
 const List = (props: RouteComponentProps) => {
@@ -8,7 +10,7 @@ const List = (props: RouteComponentProps) => {
     <div>
       {swshList &&
         swshList.map((species, index) => {
-          return <p key={index}>{species.name}</p>;
+          return <ListItem species={species} key={index} />;
         })}
     </div>
   );
