@@ -1,8 +1,6 @@
 import React from "react";
 import { Router, Link } from "@reach/router";
 
-import "./App.css";
-
 import Details from "./components/Details";
 import List from "./SWSH/List";
 
